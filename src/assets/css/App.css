@@ -1,0 +1,51 @@
+/* Main CSS file */
+
+@import 'antd/dist/antd.css';
+
+body {
+    background: #fafafa;
+    padding: 20px;
+}
+
+#root {
+    height: 100%;
+}
+
+.app-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.ant-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+}
+
+.ant-card-actions {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ant-card-actions li {
+    width: 100% !important;
+}
+
+.ant-card-actions > li:not(:last-child) {
+    border: none !important;
+}

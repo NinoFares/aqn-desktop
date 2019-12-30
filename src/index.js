@@ -1,18 +1,12 @@
-const electron = require('electron');
-const url = require('url');
-const path = require('path');
+import React from 'react'
+import { render } from 'react-dom'
+import App from './components/App'
 
-const {app, BrowserWindow} = electron;
+// Since we are using HtmlWebpackPlugin WITHOUT a template, we should create our own root node in the body element before rendering into it
+let root = document.createElement('div')
 
-let mainWindow;
+root.id = 'root'
+document.body.appendChild(root)
 
-app.on('ready',function(){
-
-    mainWindow = new BrowserWindow({});
-
-    mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'MainWindow/mainWindow.html'),
-        protocol: 'file:',
-        slashes: true
-    }));
-});
+// Now we can render our application into it
+render(<App />, document.getElementById('root'))
