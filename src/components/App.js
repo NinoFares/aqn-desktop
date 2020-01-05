@@ -12,8 +12,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: require('/home/pi/Desktop/result.json'),
-      hist: require('/home/pi/Desktop/result.hist.json'),
+      data: require('/home/pi/aqn-ceri/result.json'),
+      hist: require('/home/pi/aqn-ceri/result.hist.json'),
       tempSlider: 0,
       humSlider: 0,
       co2Slider: 0,
@@ -29,9 +29,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    watch('/home/pi/Desktop/result.json', (event, filename) => {
+    watch('/home/pi/aqn-ceri/result.json', (event, filename) => {
       if (filename) {
-        this.setState({data: require('/home/pi/Desktop/result.json')})
+        this.setState({data: require('/home/pi/aqn-ceri/result.json')})
       }
     });
 
@@ -46,7 +46,7 @@ class App extends Component {
     }, 10000);
 
     setInterval(() => {
-      this.setState({hist: require('/home/pi/Desktop/result.hist.json')});
+      this.setState({hist: require('/home/pi/aqn-ceri/result.hist.json')});
     }, 60000 * 10);
   }
 

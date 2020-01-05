@@ -80,14 +80,14 @@ function createWindow() {
 app.on('ready', () => {
 	createWindow();
 
-/* 	let file = '/home/harik/.result.json'
+ 	/*let file = '/home/pi/aqn-ceri/result.json'
 	let data = require(file);
 
 	fs.watch(file, (event, filename) => {
 		if (filename) {
 			data = require(file);
 		}
-	}); */
+	});*/
 })
 
 // Quit when all windows are closed.

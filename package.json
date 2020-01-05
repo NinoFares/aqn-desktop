@@ -1,7 +1,7 @@
 {
-  "name": "electron-react-webpack-boilerplate",
+  "name": "Aqn-Desktop",
   "version": "1.2.2",
-  "description": "Minimal Electron, React, PostCSS and Webpack boilerplate to help you get started with building your next app.",
+  "description": "Aqn-Desktop",
   "license": "MIT",
   "private": false,
   "repository": {
@@ -11,11 +11,6 @@
   "homepage": "",
   "bugs": {
     "url": "https://github.com/alexdevero/electron-react-webpack-boilerplate.git/issues"
-  },
-  "author": {
-    "name": "Alex Devero",
-    "email": "deveroalex@gmail.com",
-    "url": "https://github.com/alexdevero"
   },
   "keywords": [
     "app",
